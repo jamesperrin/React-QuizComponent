@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import QuizComponentButton from './QuizQuestionButton.js'
 
 class QuizQuestion extends Component { 
     render() { 
@@ -15,9 +16,7 @@ class QuizQuestion extends Component {
                 <section className='buttons'>
                     <ul>
                         {/* //quiz questions buttons logic goes here */}
-                        <li>
-                            {quiz_question.answer_options[0]}
-                        </li>
+                        <QuizComponentButton button_text={quiz_question.answer_options[0]} />
                     </ul>
                 </section>
             </main>
